@@ -1,0 +1,22 @@
+{
+  "name": "aracelybot",
+  "version": "1.0.0",
+  "description": "A bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Mataisplays/aracelybot.git"
+  },
+  "author": "Mataisplays",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/Mataisplays/aracelybot/issues"
+  },
+  "homepage": "https://gitlab.com/Mataisplays/aracelybot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}

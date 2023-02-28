@@ -3,7 +3,7 @@ const { Events } = require('discord.js');
 module.exports = {
 	name: Events.InteractionCreate,
 	once: true,
-	async execute(client) {
+	async execute(interaction) {
 		const command = interaction.client.commands.get(interaction.commandName);
 
 		if (!command) {

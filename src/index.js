@@ -7,6 +7,9 @@ require('dotenv').config()
 
 client.config = require('./Config')
 client.commands = new Discord.Collection();
+client.functions = {
+    ErrorEmbed: require('./functions/ErrorEmbed')
+}
 
 require('./handlers/slashes')(client)
 require("./handlers/register.slashes")(client)

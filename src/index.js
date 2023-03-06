@@ -1,6 +1,7 @@
 
 const Discord = require('discord.js')
 const client = new Discord.Client({ intents: [131071] })
+const mongoose = require('mongoose')
 require("colors")
 require('dotenv').config()
 
@@ -14,6 +15,9 @@ client.functions = {
 require('./handlers/slashes')(client)
 require("./handlers/register.slashes")(client)
 require("./handlers/events")(client)
+require('./handlers/mongodb')(client)
+
+
 
 
 client.login(process.env.TOKEN)
